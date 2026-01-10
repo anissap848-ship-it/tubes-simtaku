@@ -1,0 +1,25 @@
+/* Warna ungu utama sesuai desain kamu */
+.btn-purple-main {
+    background-color: #4B2C6D;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.btn-purple-main:hover {
+    background-color: #3a2255;
+    color: white;
+}
+
+.text-title-dark {
+    color: #0d1b2a;
+    font-weight: 700;
+}
+
+.text-subtitle-muted {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
