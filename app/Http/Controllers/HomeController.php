@@ -22,7 +22,11 @@ class HomeController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function index()
-    {
-        return view('home');
-    }
+{
+    // Mengambil semua tugas dari database
+    $tasks = \App\Models\Task::all();
+
+    // Mengirim data ke tampilan home
+    return view('home', compact('tasks'));
+}
 }
