@@ -14,15 +14,37 @@ class TaskApiController extends Controller
         return response()->json(['success' => true, 'data' => $tasks], 200);
     }
 
-    // API untuk simpan tugas baru (sesuai input di gambar)
-    public function store(Request $request) {
-        $task = Task::create([
-            'user_id' => auth()->id(),
-            'title' => $request->title,
-            'description' => $request->description,
-            'priority' => $request->priority,
-            'deadline' => $request->deadline,
-        ]);
-        return response()->json(['message' => 'Tugas berhasil dibuat', 'data' => $task], 201);
-    }
+// app/Http/Controllers/Api/TaskApiController.php
+
+public function store(Request $request) {
+    \App\Models\Task::create([
+        'user_id' => auth()->id(),
+        'title' => $request->title,
+        'description' => $request->description,
+        'priority' => $request->priority,
+        'deadline' => $request->deadline,
+    ]);
+
+    return redirect('/home'); // Pakai cara manual ini biar pasti balik ke dashboard
+}
+// Fungsi untuk Update
+public function update(Request $request, $id) {
+    $task = Task::findOrFail($id);
+    $task->update([
+        'title' => $request->title,
+        'description' => $request->description,
+        'priority' => $request->priority,
+        'deadline' => $request->deadline,
+    ]);
+
+    return redirect('/home')->with('success', 'Tugas berhasil diperbarui!');
+}
+
+// Fungsi untuk Delete
+public function destroy($id) {
+    $task = Task::findOrFail($id);
+    $task->delete();
+
+    return redirect('/home')->with('success', 'Tugas berhasil dihapus!');
+}
 }
