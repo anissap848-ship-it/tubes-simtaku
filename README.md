@@ -1,10 +1,10 @@
-# 💜 SimTaku (Sistem Manajemen Tugas Ku)
+# SimTaku (Sistem Manajemen Tugas Kuliah)
 
-**SimTaku** adalah aplikasi manajemen tugas berbasis web yang dirancang untuk membantu pengguna mengelola daftar pekerjaan harian dengan lebih terorganisir, estetis, dan efisien.
+**SimTaku** adalah aplikasi manajemen tugas berbasis web yang dirancang untuk membantu pengguna mengelola daftar tugas kuliah harian dengan lebih terorganisir, estetis, dan efisien.
 
 ---
 
-## 🚀 Fitur Utama
+## Fitur Utama
 * **Sistem Autentikasi**: Login dan Register yang aman untuk menjaga data pribadi pengguna.
 * **Dashboard Purple Theme**: Antarmuka modern dengan dominasi warna ungu untuk kenyamanan visual.
 * **Manajemen Tugas (CRUD)**:
@@ -16,7 +16,7 @@
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 * **Framework**: [Laravel 10+](https://laravel.com)
 * **Language**: PHP, JavaScript
 * **Database**: MySQL
@@ -25,7 +25,7 @@
 
 ---
 
-## 👥 Tim Pengembang (SimTaku Team)
+## Tim Pengembang (SimTaku Team)
 
 1.  **Anissa Auliya Putri (Lead Developer)**
     * Penanggung jawab arsitektur sistem inti dan keamanan.
@@ -49,7 +49,7 @@
 
 ---
 
-## 📦 Cara Instalasi di Lokal
+## Cara Instalasi di Lokal
 1.  **Clone Repositori**:
     ```bash
     git clone [https://github.com/anissap848-ship-it/tubes-simtaku.git](https://github.com/anissap848-ship-it/tubes-simtaku.git)
@@ -76,4 +76,4 @@
 
 ---
 
-*Dibuat dengan ❤️ oleh Tim SimTaku untuk tugas besar mata kuliah Pemrograman Web.*
+*Dibuat oleh Tim SimTaku untuk tugas besar mata kuliah Pemrograman Web.*
